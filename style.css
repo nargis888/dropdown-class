@@ -1,0 +1,61 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav,#nav{
+    
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+#nav li:nth-child(3){
+    position: relative;
+}
+
+#drop{
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 170px;
+    list-style-type: none;
+    padding: 15px;
+    top: 20;
+    left: 0;
+    display: none;
+
+}
+
+#drop li{
+    margin-bottom: 10px;
+
+}
+
+#nav li:nth-child(3):hover #drop{
+    display:block ;
+    cursor: pointer;
+}
+
+#drop li:nth-child(3){
+    position: relative;
+}
+
+#drop2{
+    background-color: aqua;
+    list-style-type: none;
+    position: absolute;
+    top:0;
+    right: -40px;
+}
